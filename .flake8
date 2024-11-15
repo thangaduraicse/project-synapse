@@ -1,0 +1,32 @@
+[flake8]
+max-line-length = 79
+max-complexity = 10
+exclude =
+    .git,
+    __pycache__,
+    env,
+    migrations,
+    venv,
+    tests,
+    flask_sqlalchemy,
+    flask_wtf,
+    .tox,
+    .nox,
+    .coverage,
+    .hypothesis,
+    .pytest_cache,
+    build,
+    dist
+enable-extensions = G, C, R, F, B
+ignore =
+    E1101,
+    E203,
+    E501,
+    W503,
+    F401,
+    F403,
+    F405,
+    W293
+docstring-convention = google
+import-order-style = google
+good-names = i, j, k, ex, Run, _
